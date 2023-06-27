@@ -1,0 +1,56 @@
+.golform {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 30rem 30rem;
+  grid-template-rows: auto;
+}
+.golform * {
+  margin: 1rem 0;
+}
+
+/* input styles ------------------- */
+
+input {
+  text-align: center;
+  background-color: var(--c--background);
+  color: var(--c--color-light);
+  border: var(--b-border);
+  border-radius: 5px;
+  font-size: 3rem;
+  width: 20rem;
+  transition: 0.3s;
+}
+
+input:hover,
+select:hover {
+  border: var(--b-border-light);
+  box-shadow: inset 2px 2px 12px var(--c--color-light);
+}
+input::placeholder {
+  color: greenvar(--c--color);
+}
+input:invalid {
+  background-color: goldenrod;
+  color: red;
+}
+
+/* select styles ------------------- */
+select {
+  background-color: var(--c--background);
+  color: var(--c--color);
+  font-size: 3rem;
+  border-radius: 5px;
+  border: var(--b-border);
+}
+option {
+  color: var(--c--color-light);
+  font-size: 2.5rem;
+  background-color: var(--c--background);
+  text-align: center;
+}
+
+/* Input Submit styles ------------------- */
+
+button[type="submit"] {
+  margin-top: 3rem;
+}
