@@ -4,6 +4,7 @@
 }
 #root {
   max-width: 1400px;
+  margin: auto;
 }
 .game {
   width: 100%;
@@ -25,6 +26,7 @@ h2 {
 }
 h1 {
   font-size: 10rem;
+  color: var(--c--color-light);
 }
 h1 i {
   margin-left: 10rem;
@@ -73,7 +75,6 @@ span {
   }
   h1 {
     font-size: 8rem;
-    color: var(--c--color-light);
   }
   h1 i {
     margin-left: 5rem;
