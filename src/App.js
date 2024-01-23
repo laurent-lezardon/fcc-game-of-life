@@ -70,6 +70,7 @@ function App() {
   const reset = () => {
     setBoard(gol.createGame(gameWidth, gameHeight));
     setDay(0);
+    setPlay(false);
   };
 
   // useEffect play in automatic mode if play === true
@@ -79,6 +80,7 @@ function App() {
       return () => clearInterval(interval);
     }
   }, [play]);
+
   // Render ===============================================================
   return (
     <div className="App">
@@ -93,12 +95,12 @@ function App() {
             setPlay(!play);
           }}
         >
-          Start / Pause / Play
+          Play / Pause
         </button>
         <button onClick={nextDay}>next day</button>
         <div>
           <span className="day">day</span>
-          <span>{day}</span>
+          <span className="daynumber">{day}</span>
         </div>
         <button onClick={reset}>Reset</button>
       </div>

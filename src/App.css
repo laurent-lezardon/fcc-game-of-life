@@ -1,11 +1,13 @@
 .App {
   font-size: 10rem;
+  padding: 0;
 }
 #root {
-  min-width: 1400px;
+  max-width: 1400px;
 }
 .game {
-  width: 80%;
+  width: 100%;
+  max-width: 900px;
   margin: 5rem 0;
   display: flex;
   justify-content: space-between;
@@ -42,17 +44,92 @@ button:hover {
   cursor: pointer;
   box-shadow: 2px 2px 8px var(--c--color-light);
 }
-/* span styles (day) ------------------- */
+/* span styles  ------------------- */
 span {
   padding: 0.5rem 0;
-  color: var(--c--color-light);
-  border-radius: 0 2rem 2rem 0;
+  border-radius: 2rem;
   font-size: 4rem;
   border: var(--b-border);
   padding: 0.5rem 3rem;
+}
+.daynumber {
+  color: var(--c--color-light);
+  border-radius: 0 2rem 2rem 0;
+  background-color: var(--c--button);
 }
 .day {
   color: var(--c--color);
   border-radius: 2rem 0 0 2rem;
   background-color: var(--c--button);
+}
+@media (max-width: 1024px) {
+  .App {
+    font-size: 10rem;
+    padding: 2rem;
+  }
+  h1,
+  h2 {
+    margin-top: 2rem;
+  }
+  h1 {
+    font-size: 8rem;
+    color: var(--c--color-light);
+  }
+  h1 i {
+    margin-left: 5rem;
+  }
+  .game {
+    width: 100%;
+    max-width: 500px;
+  }
+  /* buttons styles ------------------- */
+  button {
+    font-size: 2rem;
+  }
+  button:hover {
+    border: var(--b-border-light);
+    cursor: pointer;
+    box-shadow: 1px 1px 4px var(--c--color-light);
+  }
+
+  /* span styles  ------------------- */
+  span {
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 640px) {
+  .App {
+    padding: 0;
+  }
+  h1,
+  h2 {
+    margin-top: 2rem;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  h1 i {
+    margin-left: 5rem;
+  }
+  .game {
+    width: 90%;
+    max-width: 400px;
+  }
+  /* buttons styles ------------------- */
+  button {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+  }
+  button:hover {
+    border: var(--b-border-light);
+    cursor: pointer;
+    box-shadow: 1px 1px 4px var(--c--color-light);
+  }
+
+  /* span styles  ------------------- */
+  span {
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+  }
 }

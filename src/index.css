@@ -16,8 +16,21 @@
 body {
   background-color: var(--c--background);
   height: 100vh;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   font-size: 10rem;
   color: var(--c--color);
+  padding: 1rem;
+}
+
+@media (max-width: 1024px) {
+  * {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 640px) {
+  * {
+    font-size: 45%;
+  }
 }

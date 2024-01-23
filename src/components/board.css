@@ -22,3 +22,17 @@
 .alive {
   background-color: var(--c--color);
 }
+@media (max-width: 1024px) {
+  .plot {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2px;
+  }
+}
+@media (max-width: 640px) {
+  .plot {
+    width: 1.35rem;
+    height: 1.35rem;
+    border-radius: 1px;
+  }
+}

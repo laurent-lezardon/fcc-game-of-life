@@ -20,7 +20,23 @@ input {
   width: 20rem;
   transition: 0.3s;
 }
-
+.golform label {
+  position: relative;
+}
+.infobulle {
+  background-color: var(--c--button);
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  z-index: 10;
+  padding: 0 2rem;
+  visibility: hidden;
+  color: var(--c--color-light);
+  border: 1px solid var(--c--color-light);
+}
+label:hover .infobulle {
+  visibility: visible;
+}
 input:hover,
 select:hover {
   border: var(--b-border-light);
@@ -53,4 +69,48 @@ option {
 
 button[type="submit"] {
   margin-top: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .golform {
+    grid-template-columns: 30rem 30rem;
+  }
+  label {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .golform {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 15rem 30rem;
+    grid-template-rows: auto;
+  }
+  label {
+    font-size: 2rem;
+  }
+  input {
+    border-radius: 2px;
+    font-size: 2rem;
+    width: 20rem;
+    transition: 0.3s;
+    padding: 0.2rem;
+  }
+
+  input:hover,
+  select:hover {
+    border: var(--b-border-light);
+    box-shadow: inset 2px 2px 12px var(--c--color-light);
+  }
+  select {
+    font-size: 2rem;
+    border-radius: 2px;
+    max-width: 150px;
+  }
+  button[type="submit"] {
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+  }
 }
