@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/fcc-game-of-life/static/css/main.aaec89c5.css",
-    "main.js": "/fcc-game-of-life/static/js/main.64d8f9a4.js",
+    "main.css": "/fcc-game-of-life/static/css/main.545b6ee3.css",
+    "main.js": "/fcc-game-of-life/static/js/main.6211f775.js",
     "index.html": "/fcc-game-of-life/index.html",
-    "main.aaec89c5.css.map": "/fcc-game-of-life/static/css/main.aaec89c5.css.map",
-    "main.64d8f9a4.js.map": "/fcc-game-of-life/static/js/main.64d8f9a4.js.map"
+    "main.545b6ee3.css.map": "/fcc-game-of-life/static/css/main.545b6ee3.css.map",
+    "main.6211f775.js.map": "/fcc-game-of-life/static/js/main.6211f775.js.map"
   },
   "entrypoints": [
-    "static/css/main.aaec89c5.css",
-    "static/js/main.64d8f9a4.js"
+    "static/css/main.545b6ee3.css",
+    "static/js/main.6211f775.js"
   ]
 }
